@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t hamid42358987/question2:latest .'
+				sh 'docker build -t hamid42358987/question2:tagname .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push hamid42358987/question2:latest'
+				sh 'docker push hamid42358987/question2:tagname'
 			}
 		}
 	}
